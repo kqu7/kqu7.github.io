@@ -1,0 +1,98 @@
+---
+layout: default
+title: "Kai Qu: projects"
+---
+
+<div class="container" id = "main_body">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page_header">
+        <h3 class="page_name">Projects</h3>
+      </div>
+      <div class="body_content">
+          <p class = "page_intro">This page contains some projects/applications I have developed individually or with other CS/CSE students.</p>
+
+          <h5>Exploration of Algorithms on Coping with the MVC Problem<small style="font-size: 0.8rem"> (Fall 2020)</small></h5>
+          <span class="tab"><span class="group_members">Group members: Tiancheng Ye, Chenying Liu, Kai Qu [All members were CSE students at Georgia Tech.]</span>
+          <br>
+          <span class="tab">We implemented four different algorithms (branch and bound, approximation, and two variations of local search algorithms) attempting to cope with
+            a well-known NP-hard problem in graph theory, the minimum vertex cover (MVC). We measured the performance of different algorithms in terms of running time and
+            relative error, finding that one variation of the implemented local searches performed best in terms of the above two criterias but the performance depended significantly
+            on the starting point of the search.
+          <br>
+          <span class="tab">In addition, we analyzed the theoretical time and space complexities of the four algorithms, comparing the theoretical time complexities to the actual
+            running time and providing reasons for some inconsistencies on certain graph instances.
+          </span>
+          <br>
+          <span class="tab">The project report is available
+          <a href="reports/algorithm_prj_report.pdf" target="_blank">here</a>. Full implementation is also available
+          upon query.</span>
+          <hr>
+
+          <h5>Optimal Review Ranking for Improving Shopper’s Decision Making<small style="font-size: 0.8rem"> (Spring 2020)</small></h5>
+          <span class="tab"><span class="group_members">Group members: Akhil Sai Peddireddy (ap3ub), Kai Qu (kq4ff),
+          Rakshita Kaulgud Ramesh (rrk7pb), and Haoran Zhu (hz3fr) [All members were CS students at UVA.]</span>
+          <br>
+          <span class="tab">We developed a system that provides personalized ranking of  customer reviews for each shooper. Using
+          cumulative position-weighted score, we were able to demonstrate that there is
+          an average of 20% increase in user satisfaction using our personalized ranking system compared to the default Amazon
+          ranking system.
+          <br>
+          <span class="tab">Also, we proposed a method of rating products at term level based on users’ preferences.
+          For example, if a user cares very much about the price of a product, we’ll offer another rating of the product
+          solely based on the price factor. This method can be applied to recommendation systems to provide accurate recommendations.
+          <br>
+          <span class="tab">The project report is available
+          <a href="reports/ir_report.pdf" target="_blank">here</a>. Full implementation is also available
+          upon query.
+
+          <hr>
+
+          <h5>Sarcastic Tweets Detection<small style="font-size: 0.8rem"> (Fall 2019)</small></h5>
+          <span class="tab"><span class="group_members">Group members: Yuxin Wu (yw7vv), Issac Li (il5fq),
+          Kai Qu (kq4ff) [All members were CS students at UVA.]</span>
+          <br>
+          <span class="tab">We experimented with different variations of CNN and LSTM models on the problem of sarcastic text detection
+            with both the twitter and reddit datasets crawled from Kaggle, comparing the results of various models in different metrics (Precision, Recall, F1, and Accuracy)
+          <br>
+          <span class="tab">From the result analysis, we discovered that while the precision scores of some variations of LSTM models were high, it showed that all models
+            had relatively low recall scores. We suspected that this was because of the inherent difficulty in sarcasm detection, and our models can only deal with the easy cases due to their limited structures
+          <br>
+          <span class="tab">The project report is available
+          <a href="reports/sarcasm_detection_report.pdf" target="_blank">here</a>. Full implementation is also available
+          upon query.
+
+          <hr>
+
+          <h5>DeepArt: Identify Artist from Painting<small style="font-size: 0.8rem"> (Fall 2019)</small></h5>
+          <span class="tab"><span class="group_members">Group members: Daniel Xiao (zx8yz), Kai Qu(kq4ff), and Haoran Zhu (hz3fr)
+          [All members were CS students at UVA.]</span>
+          <br>
+          <span class="tab">We adapted and fine-tune different pretrained models (ResNet50, GoogLeNet, VGGNet11) to a dataset that
+          contains artworks of 50 the most influential artists of all time and compare the results to our baseline model (ResNet18).
+          <br>
+          <span class="tab">Furthermore, we trained another identical ResNet50 Model (call it ResNet50_2). However, during the
+          training of ResNet50_2, we freezed deeper layers to only train shallow layers to capture the overall styles of different
+          paintings, comparing this result to the one merely by fine-tuning approach.
+          <br>
+          <span class="tab">Our ResNet 50_2 model outperforms all other pretrained models by at least 1.5% in all the metrics we used.
+          This validates our speculation that shallow layers play a more important role in understanding the overall style of
+          paintings than deep layers.
+          <br>
+          <span class="tab">The project report is available
+          <a href="reports/deepart_report.pdf" target="_blank">here</a>. Full implementation is also available
+          upon query.
+          <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <footer id="footer" class="bg-dark text-white-50"><small>
+  Last Updated: 01/01/2021
+  <br>
+  Powered by <a href="http://getbootstrap.com" target="_blank">Bootstrap</a></small>
+</footer> -->
+
+</body>
+</html>
