@@ -1,20 +1,22 @@
 body.body {
     font-size: 0.98rem;
-    position: relative; /* footer */
-    min-height: 100vh; /* footer */
+    position: relative;
+    /* footer */
+    min-height: 100vh;
+    /* footer */
 }
 
 span.tab {
     padding-left: 25px;
 }
 
+
 /* index.html */
 
 img.icon {
-  width: 32px;
-  height: 32px
+    width: 32px;
+    height: 32px
 }
-
 
 a.navbar-brand {
     margin-left: 10%;
@@ -23,7 +25,8 @@ a.navbar-brand {
 div#main_body {
     margin-top: 30px;
     display: block;
-    padding-bottom: 4rem; /* footer */
+    padding-bottom: 4rem;
+    /* footer */
 }
 
 img.my_photo {
@@ -84,7 +87,6 @@ h3.home {
 div.bio {
     margin: 0 3px 0 8%;
     line-height: 1.25rem;
-
 }
 
 footer#footer {
@@ -95,6 +97,7 @@ footer#footer {
     text-align: center;
     padding: 10px 0;
 }
+
 
 /* aboutme.html */
 
@@ -122,8 +125,9 @@ span.group_members {
     color: blueviolet;
 }
 
+
 /* research.html */
 
-img.smart_building_system_overview{
+img.smart_building_system_overview {
     width: 350px;
 }
