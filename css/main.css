@@ -10,7 +10,6 @@ body {
     margin: 0
 }
 
-
 /* Kai: center text */
 
 .center {
@@ -20,26 +19,11 @@ body {
     padding: 10px;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block
 }
 
-audio,
-canvas,
-progress,
-video {
+audio, canvas, progress, video {
     display: inline-block;
     vertical-align: baseline;
 }
@@ -49,8 +33,7 @@ audio:not([controls]) {
     height: 0
 }
 
-[hidden],
-template {
+[hidden], template {
     display: none
 }
 
@@ -58,8 +41,7 @@ a {
     background-color: transparent
 }
 
-a:active,
-a:hover {
+a:active, a:hover {
     outline: 0
 }
 
@@ -67,8 +49,7 @@ abbr[title] {
     border-bottom: 1px dotted
 }
 
-b,
-strong {
+b, strong {
     font-weight: bold
 }
 
@@ -90,8 +71,7 @@ small {
     font-size: 80%
 }
 
-sub,
-sup {
+sub, sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -128,19 +108,12 @@ pre {
     overflow: auto
 }
 
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
     font-family: monospace, monospace;
     font-size: 15px
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
     color: inherit;
     font: inherit;
     margin: 0;
@@ -150,26 +123,20 @@ button {
     overflow: visible
 }
 
-button,
-select {
+button, select {
     text-transform: none
 }
 
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
 }
 
-button[disabled],
-html input[disabled] {
+button[disabled], html input[disabled] {
     cursor: default
 }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
     border: 0;
     padding: 0
 }
@@ -178,14 +145,12 @@ input {
     line-height: normal
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
     box-sizing: border-box;
     padding: 0;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
     height: auto
 }
 
@@ -196,8 +161,7 @@ input[type="search"] {
     box-sizing: content-box
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none
 }
 
@@ -225,8 +189,7 @@ table {
     border-spacing: 0
 }
 
-td,
-th {
+td, th {
     padding: 0
 }
 
@@ -262,12 +225,7 @@ body {
     }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     font-weight: bold;
@@ -275,11 +233,7 @@ h6 {
     font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2, h3, h4, h5, h6 {
     margin: 20px 0 15px
 }
 
@@ -441,8 +395,7 @@ dd {
     margin-right: auto
 }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
     content: " ";
     display: table
 }
@@ -467,18 +420,15 @@ dd {
     margin-right: 5px
 }
 
-.highlight table,
-.gist table {
+.highlight table, .gist table {
     width: auto;
 }
 
-.highlight table td,
-.gist table td {
+.highlight table td, .gist table td {
     border: none
 }
 
-.highlight a,
-.gist a {
+.highlight a, .gist a {
     color: #222 !important;
     text-decoration: none !important
 }
@@ -514,17 +464,14 @@ table>tbody>tr:hover {
     background-color: #f5f5f5
 }
 
-caption,
-th,
-td {
+caption, th, td {
     padding: 8px;
     text-align: left;
     vertical-align: middle;
     font-weight: normal
 }
 
-th,
-td {
+th, td {
     border-bottom: 3px solid #ddd;
     border-right: 1px solid #eee
 }
@@ -538,8 +485,7 @@ td {
     border-bottom-width: 1px
 }
 
-html,
-body {
+html, body {
     height: 100%
 }
 
@@ -595,8 +541,7 @@ body {
     }
 }
 
-pre,
-.highlight {
+pre, .highlight {
     background: #f7f7f7;
     margin: 20px 0;
     padding: 15px;
@@ -606,13 +551,11 @@ pre,
     line-height: 1.6
 }
 
-.highlight .gutter pre,
-.gist .gist-file .gist-data .line-numbers {
+.highlight .gutter pre, .gist .gist-file .gist-data .line-numbers {
     color: #666
 }
 
-pre,
-code {
+pre, code {
     font-family: "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace
 }
 
@@ -653,8 +596,7 @@ pre code {
     margin-bottom: 1em;
 }
 
-.highlight figcaption:before,
-.highlight figcaption:after {
+.highlight figcaption:before, .highlight figcaption:after {
     content: " ";
     display: table
 }
@@ -735,62 +677,31 @@ pre .comment {
     color: #8e908c
 }
 
-pre .variable,
-pre .attribute,
-pre .tag,
-pre .regexp,
-pre .ruby .constant,
-pre .xml .tag .title,
-pre .xml .pi,
-pre .xml .doctype,
-pre .html .doctype,
-pre .css .id,
-pre .css .class,
-pre .css .pseudo {
+pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
     color: #c82829
 }
 
-pre .number,
-pre .preprocessor,
-pre .built_in,
-pre .literal,
-pre .params,
-pre .constant {
+pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
     color: #f5871f
 }
 
-pre .ruby .class .title,
-pre .css .rules .attribute {
+pre .ruby .class .title, pre .css .rules .attribute {
     color: #718c00
 }
 
-pre .string,
-pre .value,
-pre .inheritance,
-pre .header,
-pre .ruby .symbol,
-pre .xml .cdata {
+pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
     color: #718c00
 }
 
-pre .title,
-pre .css .hexcolor {
+pre .title, pre .css .hexcolor {
     color: #3e999f
 }
 
-pre .function,
-pre .python .decorator,
-pre .python .title,
-pre .ruby .function .title,
-pre .ruby .title .keyword,
-pre .perl .sub,
-pre .javascript .title,
-pre .coffeescript .title {
+pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
     color: #4271ae
 }
 
-pre .keyword,
-pre .javascript .function {
+pre .keyword, pre .javascript .function {
     color: #8959a8
 }
 
@@ -809,9 +720,7 @@ pre .javascript .function {
     }
 }
 
-.blockquote-center,
-.page-home .post-type-quote blockquote,
-.page-post-detail .post-type-quote blockquote {
+.blockquote-center, .page-home .post-type-quote blockquote, .page-post-detail .post-type-quote blockquote {
     position: relative;
     margin: 40px 0;
     padding: 0;
@@ -819,12 +728,7 @@ pre .javascript .function {
     text-align: center;
 }
 
-.blockquote-center::before,
-.page-home .post-type-quote blockquote::before,
-.page-post-detail .post-type-quote blockquote::before,
-.blockquote-center::after,
-.page-home .post-type-quote blockquote::after,
-.page-post-detail .post-type-quote blockquote::after {
+.blockquote-center::before, .page-home .post-type-quote blockquote::before, .page-post-detail .post-type-quote blockquote::before, .blockquote-center::after, .page-home .post-type-quote blockquote::after, .page-post-detail .post-type-quote blockquote::after {
     position: absolute;
     content: ' ';
     display: block;
@@ -836,29 +740,20 @@ pre .javascript .function {
     background-size: 22px 22px
 }
 
-.blockquote-center::before,
-.page-home .post-type-quote blockquote::before,
-.page-post-detail .post-type-quote blockquote::before {
+.blockquote-center::before, .page-home .post-type-quote blockquote::before, .page-post-detail .post-type-quote blockquote::before {
     top: -20px;
     background-image: url("../images/quote-l.svg");
     border-top: 1px solid #ccc
 }
 
-.blockquote-center::after,
-.page-home .post-type-quote blockquote::after,
-.page-post-detail .post-type-quote blockquote::after {
+.blockquote-center::after, .page-home .post-type-quote blockquote::after, .page-post-detail .post-type-quote blockquote::after {
     bottom: -20px;
     background-image: url("../images/quote-r.svg");
     border-bottom: 1px solid #ccc;
     background-position: 100% 8px
 }
 
-.blockquote-center p,
-.page-home .post-type-quote blockquote p,
-.page-post-detail .post-type-quote blockquote p,
-.blockquote-center div,
-.page-home .post-type-quote blockquote div,
-.page-post-detail .post-type-quote blockquote div {
+.blockquote-center p, .page-home .post-type-quote blockquote p, .page-post-detail .post-type-quote blockquote p, .blockquote-center div, .page-home .post-type-quote blockquote div, .page-post-detail .post-type-quote blockquote div {
     text-align: center
 }
 
@@ -923,8 +818,7 @@ pre .javascript .function {
     transition-delay: 0s;
 }
 
-.btn:hover,
-.post-more-link .btn:hover {
+.btn:hover, .post-more-link .btn:hover {
     border-color: #222;
     color: #222;
     background: #fff
@@ -948,11 +842,7 @@ pre .javascript .function {
     border-top: 1px solid #eee
 }
 
-.page-number-basic,
-.pagination .prev,
-.pagination .next,
-.pagination .page-number,
-.pagination .space {
+.page-number-basic, .pagination .prev, .pagination .next, .pagination .page-number, .pagination .space {
     display: inline-block;
     position: relative;
     top: -1px;
@@ -962,18 +852,12 @@ pre .javascript .function {
 }
 
 @media (max-width:767px) {
-    .page-number-basic,
-    .pagination .prev,
-    .pagination .next,
-    .pagination .page-number,
-    .pagination .space {
+    .page-number-basic, .pagination .prev, .pagination .next, .pagination .page-number, .pagination .space {
         margin: 0 5px
     }
 }
 
-.pagination .prev,
-.pagination .next,
-.pagination .page-number {
+.pagination .prev, .pagination .next, .pagination .page-number {
     border-bottom: 0;
     border-top: 1px solid #eee;
     transition-property: border-color;
@@ -982,9 +866,7 @@ pre .javascript .function {
     transition-delay: 0s;
 }
 
-.pagination .prev:hover,
-.pagination .next:hover,
-.pagination .page-number:hover {
+.pagination .prev:hover, .pagination .next:hover, .pagination .page-number:hover {
     border-top-color: #222
 }
 
@@ -1011,16 +893,12 @@ pre .javascript .function {
     .pagination {
         border-top: none
     }
-    .pagination .prev,
-    .pagination .next,
-    .pagination .page-number {
+    .pagination .prev, .pagination .next, .pagination .page-number {
         margin-bottom: 10px;
         border-top: 0;
         border-bottom: 1px solid #eee;
     }
-    .pagination .prev:hover,
-    .pagination .next:hover,
-    .pagination .page-number:hover {
+    .pagination .prev:hover, .pagination .next:hover, .pagination .page-number:hover {
         border-bottom-color: #222
     }
 }
@@ -1138,9 +1016,7 @@ pre .javascript .function {
     opacity: 0
 }
 
-.use-motion .logo,
-.use-motion .site-title,
-.use-motion .site-subtitle {
+.use-motion .logo, .use-motion .site-title, .use-motion .site-subtitle {
     opacity: 0;
     position: relative;
     top: -10px
@@ -1196,18 +1072,21 @@ pre .javascript .function {
 
 .menu .menu-item {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 @media screen and (max-width:767px) {
     .menu .menu-item {
-        margin-top: 10px
+        margin-top: 10px;
+        margin-right: 20px;
     }
 }
 
+/* Note: the css effect of menu-item is covered by a more specific menu-item a */
 .menu .menu-item a {
     display: block;
-    font-size: 13px;
+    margin: 0 25px;
+    font-size: 17px;
     text-transform: capitalize;
     line-height: inherit;
     border-bottom: 1px solid transparent;
@@ -1222,8 +1101,70 @@ pre .javascript .function {
 }
 
 .use-motion .menu-item {
-    opacity: 0
+    opacity: 0;
+    margin: 0 30px;
 }
+
+/* ****************************
+animation effects added by me 
+***************************** */
+
+/* trial 2: this works */
+
+@keyframes slidein {
+    from {
+        margin-bottom: 100%;
+        width: 300%;
+    }
+    to {
+        margin-bottom: 0%;
+        width: 100%;
+    }
+}
+
+/* this did not work */
+
+.ease_in_animation {
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+
+.ease_in_animation .ease_in_animation li {
+    display: block;
+    font-size: 13px;
+    text-transform: capitalize;
+    line-height: inherit;
+    border-bottom: 1px solid transparent;
+    transition-property: border-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+/* Diagonal Color Gradients by Alison Quaglia */
+
+body.gradient {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* ********************************
+   My animation section ended here 
+   ******************************** */
 
 .post-body .fancybox img {
     display: block !important;
@@ -1233,8 +1174,7 @@ pre .javascript .function {
     cursor: -webkit-zoom-in
 }
 
-.post-body .image-caption,
-.post-body .figure .caption {
+.post-body .image-caption, .post-body .figure .caption {
     margin: 10px auto 15px;
     text-align: center;
     font-size: 14px;
@@ -1258,12 +1198,10 @@ pre .javascript .function {
     .posts-expand {
         margin: 0 20px
     }
-    .post-body pre,
-    .post-body .highlight {
+    .post-body pre, .post-body .highlight {
         padding: 10px;
     }
-    .post-body pre .gutter pre,
-    .post-body .highlight .gutter pre {
+    .post-body pre .gutter pre, .post-body .highlight .gutter pre {
         padding-right: 10px
     }
 }
@@ -1274,19 +1212,11 @@ pre .javascript .function {
     }
 }
 
-.posts-expand .post-body h2,
-.posts-expand .post-body h3,
-.posts-expand .post-body h4,
-.posts-expand .post-body h5,
-.posts-expand .post-body h6 {
+.posts-expand .post-body h2, .posts-expand .post-body h3, .posts-expand .post-body h4, .posts-expand .post-body h5, .posts-expand .post-body h6 {
     padding-top: 10px;
 }
 
-.posts-expand .post-body h2 .header-anchor,
-.posts-expand .post-body h3 .header-anchor,
-.posts-expand .post-body h4 .header-anchor,
-.posts-expand .post-body h5 .header-anchor,
-.posts-expand .post-body h6 .header-anchor {
+.posts-expand .post-body h2 .header-anchor, .posts-expand .post-body h3 .header-anchor, .posts-expand .post-body h4 .header-anchor, .posts-expand .post-body h5 .header-anchor, .posts-expand .post-body h6 .header-anchor {
     float: right;
     margin-left: 10px;
     color: #ccc;
@@ -1294,19 +1224,11 @@ pre .javascript .function {
     visibility: hidden;
 }
 
-.posts-expand .post-body h2 .header-anchor:hover,
-.posts-expand .post-body h3 .header-anchor:hover,
-.posts-expand .post-body h4 .header-anchor:hover,
-.posts-expand .post-body h5 .header-anchor:hover,
-.posts-expand .post-body h6 .header-anchor:hover {
+.posts-expand .post-body h2 .header-anchor:hover, .posts-expand .post-body h3 .header-anchor:hover, .posts-expand .post-body h4 .header-anchor:hover, .posts-expand .post-body h5 .header-anchor:hover, .posts-expand .post-body h6 .header-anchor:hover {
     color: inherit
 }
 
-.posts-expand .post-body h2:hover .header-anchor,
-.posts-expand .post-body h3:hover .header-anchor,
-.posts-expand .post-body h4:hover .header-anchor,
-.posts-expand .post-body h5:hover .header-anchor,
-.posts-expand .post-body h6:hover .header-anchor {
+.posts-expand .post-body h2:hover .header-anchor, .posts-expand .post-body h3:hover .header-anchor, .posts-expand .post-body h4:hover .header-anchor, .posts-expand .post-body h5:hover .header-anchor, .posts-expand .post-body h6:hover .header-anchor {
     visibility: visible
 }
 
@@ -1329,8 +1251,7 @@ pre .javascript .function {
     .posts-collapse {
         margin: 0 20px;
     }
-    .posts-collapse .post-title,
-    .posts-collapse .post-meta {
+    .posts-collapse .post-title, .posts-collapse .post-meta {
         display: block;
         width: auto;
         text-align: left
@@ -1440,10 +1361,7 @@ pre .javascript .function {
     border-bottom: none
 }
 
-.page-home .post-type-quote .post-header,
-.page-post-detail .post-type-quote .post-header,
-.page-home .post-type-quote .post-tags,
-.page-post-detail .post-type-quote .post-tags {
+.page-home .post-type-quote .post-header, .page-post-detail .post-type-quote .post-header, .page-home .post-type-quote .post-tags, .page-post-detail .post-type-quote .post-tags {
     display: none
 }
 
@@ -1643,8 +1561,7 @@ pre .javascript .function {
     border: none
 }
 
-.fancybox-close,
-.fancybox-close:hover {
+.fancybox-close, .fancybox-close:hover {
     border: none
 }
 
@@ -1963,8 +1880,7 @@ pre .javascript .function {
     margin: 0 5px
 }
 
-.powered-by,
-.theme-info {
+.powered-by, .theme-info {
     display: inline-block
 }
 
@@ -2003,8 +1919,7 @@ pre .javascript .function {
     margin-bottom: 30px
 }
 
-.theme-next #ds-thread #ds-reset .ds-replybox .ds-avatar,
-.theme-next #ds-reset .ds-avatar img {
+.theme-next #ds-thread #ds-reset .ds-replybox .ds-avatar, .theme-next #ds-reset .ds-avatar img {
     box-shadow: none
 }
 
@@ -2208,13 +2123,11 @@ pre .javascript .function {
     color: #f00
 }
 
-.theme-next #ds-reset .duoshuo-ua-platform,
-.theme-next #ds-reset .duoshuo-ua-browser {
+.theme-next #ds-reset .duoshuo-ua-platform, .theme-next #ds-reset .duoshuo-ua-browser {
     color: #ccc;
 }
 
-.theme-next #ds-reset .duoshuo-ua-platform .fa,
-.theme-next #ds-reset .duoshuo-ua-browser .fa {
+.theme-next #ds-reset .duoshuo-ua-platform .fa, .theme-next #ds-reset .duoshuo-ua-browser .fa {
     display: inline-block;
     margin-right: 3px
 }
@@ -2239,9 +2152,7 @@ pre .javascript .function {
     border-color: #d9534f !important
 }
 
-.theme-next .this_ua.platform.iOS,
-.theme-next .this_ua.platform.Mac,
-.theme-next .this_ua.platform.Windows {
+.theme-next .this_ua.platform.iOS, .theme-next .this_ua.platform.Mac, .theme-next .this_ua.platform.Windows {
     background-color: #39b3d7 !important;
     border-color: #46b8da !important
 }
@@ -2256,8 +2167,7 @@ pre .javascript .function {
     border-color: #01b171 !important
 }
 
-.theme-next .this_ua.browser.Mobile,
-.theme-next .this_ua.browser.Chrome {
+.theme-next .this_ua.browser.Mobile, .theme-next .this_ua.browser.Chrome {
     background-color: #5cb85c !important;
     border-color: #4cae4c !important
 }
@@ -2267,21 +2177,17 @@ pre .javascript .function {
     border-color: #eea236 !important
 }
 
-.theme-next .this_ua.browser.Maxthon,
-.theme-next .this_ua.browser.IE {
+.theme-next .this_ua.browser.Maxthon, .theme-next .this_ua.browser.IE {
     background-color: #428bca !important;
     border-color: #357ebd !important
 }
 
-.theme-next .this_ua.browser.baidu,
-.theme-next .this_ua.browser.UCBrowser,
-.theme-next .this_ua.browser.Opera {
+.theme-next .this_ua.browser.baidu, .theme-next .this_ua.browser.UCBrowser, .theme-next .this_ua.browser.Opera {
     background-color: #d9534f !important;
     border-color: #d43f3a !important
 }
 
-.theme-next .this_ua.browser.Android,
-.theme-next .this_ua.browser.QQBrowser {
+.theme-next .this_ua.browser.Android, .theme-next .this_ua.browser.QQBrowser {
     background-color: #78ace9 !important;
     border-color: #4cae4c !important
 }
@@ -2343,8 +2249,7 @@ pre .javascript .function {
     border-radius: 50%
 }
 
-.page-archive .posts-collapse::before,
-.page-archive .posts-collapse::after {
+.page-archive .posts-collapse::before, .page-archive .posts-collapse::after {
     content: " ";
     position: absolute
 }
@@ -2390,12 +2295,7 @@ pre .javascript .function {
     overflow: hidden
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 20px 0 10px
 }
 
@@ -2421,8 +2321,7 @@ hr {
     padding: 40px 0;
 }
 
-.header-inner:before,
-.header-inner:after {
+.header-inner:before, .header-inner:after {
     content: " ";
     display: table
 }
@@ -2466,7 +2365,7 @@ hr {
 }
 
 .site-meta .site-title {
-    font-size: 22px;
+    font-size: 37px;
     font-weight: bolder;
 }
 
@@ -2476,8 +2375,11 @@ hr {
     }
 }
 
-.logo-line-before,
-.logo-line-after {
+/*  *************************
+    Site logo + animation
+    *************************
+*/
+.logo-line-before, .logo-line-after {
     display: block;
     overflow: hidden;
     margin: 0 auto;
@@ -2485,14 +2387,12 @@ hr {
 }
 
 @media (max-width:767px) {
-    .logo-line-before,
-    .logo-line-after {
+    .logo-line-before, .logo-line-after {
         display: none
     }
 }
 
-.logo-line-before i,
-.logo-line-after i {
+.logo-line-before i, .logo-line-after i {
     position: relative;
     display: block;
     height: 2px;
@@ -2500,18 +2400,17 @@ hr {
 }
 
 @media (max-width:767px) {
-    .logo-line-before i,
-    .logo-line-after i {
+    .logo-line-before i, .logo-line-after i {
         height: 3px
     }
 }
 
 .use-motion .logo-line-before i {
-    left: -100%
+    left: 0%
 }
 
 .use-motion .logo-line-after i {
-    right: -100%
+    right: 0%
 }
 
 .site-subtitle {
@@ -2521,6 +2420,17 @@ hr {
 .site-nav-toggle {
     position: static;
     float: right
+}
+
+/* Navbar item animations and styles */
+@keyframes slide-down {
+    from {
+        margin-top: 300%;
+    }
+    to {
+        margin-top: 0%;
+    }
+
 }
 
 .menu {
@@ -2555,6 +2465,11 @@ hr {
     background: none;
     border: none;
     transition-property: background;
+}
+
+.menu-item-icon {
+    animation-name: slide-down;
+    animation-duration: 1.3s;
 }
 
 @media (max-width:767px) {
@@ -2593,22 +2508,18 @@ hr {
     }
 }
 
-.menu-item-icon {
-    display: none
-}
+
 
 .posts-expand {
     padding-top: 0;
 }
 
-.posts-expand .post-title,
-.posts-expand .post-meta {
+.posts-expand .post-title, .posts-expand .post-meta {
     text-align: left;
 }
 
 @media (max-width:767px) {
-    .posts-expand .post-title,
-    .posts-expand .post-meta {
+    .posts-expand .post-title, .posts-expand .post-meta {
         text-align: center
     }
 }
@@ -2750,8 +2661,7 @@ hr {
     }
 }
 
-.page-post-detail .post-title,
-.page-post-detail .post-meta {
+.page-post-detail .post-title, .page-post-detail .post-meta {
     text-align: center
 }
 
@@ -2834,3 +2744,184 @@ code {
     border-radius: 3px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace
 }
+
+/* Copy from Shenghui Cheng's Resume Section */
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+}
+
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: #dce8f8;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;
+}
+
+/* skill tree */
+.circle {
+    border-radius: 50%;
+    border: 3px solid grey;
+    width: 75px;
+    height: 75px;
+    /* border-color: rgb(173, 173, 173); */
+    /* background-color: grey; */
+    display: inline-block;
+    position: absolute;
+}
+
+.circle.big {
+    width: 325px;
+    height: 325px;
+    margin: 100px;
+}
+
+.top-left-1 {
+    left: 35px;
+    bottom: 320px;
+}
+
+.top-left-2 {
+    left: -35px;
+    bottom: 270px;
+}
+
+.top-left-3 {
+    left: -80px;
+    bottom: 200px;
+}
+
+.middle-left {
+    left: -90px;
+    bottom: 110px;
+}
+
+.low-left-1 {
+    left: -70px;
+    bottom: 25px;
+}
+
+.low-left-2 {
+    left: -20px;
+    bottom: -45px;
+}
+
+.low-left-3 {
+    left: 65px;
+    bottom: -85px;
+}
+
+.signature {
+    width: 150px;
+    height: 150px;
+    left: 350px;
+    bottom: -85px;
+    position: absolute;
+}
+
+
+/* ***************
+    CSS added by me
+   ***************
+*/
+.navbar-name {
+    font-family: "Luminari", Georgia, "Times New Roman", Times, serif;
+    font-size: 60px;
+}
+
+
+/* logo line above and blow the logo */
+@keyframes slide-from-left {
+    from {
+        margin-left: 300%;
+    }   
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes slide-from-right {
+    from {
+        margin-right: 300%;
+    }
+    to {
+        margin-right: 0%;
+    }
+}
+
+.logo-line-above, .logo-line-below {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* TODO: try to figure out a way to refactor the code to avoid repetitions */
+.logo-line-above i {
+    position: relative;
+    display: block;
+    height: 2px;
+    background: #222;
+    animation-name: slide-from-right;
+    animation-duration: 1.3s;
+}
+
+.logo-line-below i {
+    position: relative;
+    display: block;
+    height: 2px;
+    background: #222; 
+    animation-name: slide-from-left;
+    animation-duration: 1.3s;   
+}
+
+
+
+
