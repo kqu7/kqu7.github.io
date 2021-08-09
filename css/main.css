@@ -14,7 +14,7 @@ body {
 
 .center {
     margin: auto;
-    width: 50%;
+    width: 75%;
     /* border: 3px solid green; */
     padding: 10px;
 }
@@ -205,6 +205,19 @@ body {
     line-height: 2;
     color: #555;
     background: #fff;
+    /* overflow: hidden; */
+    padding: 0px;
+    margin: 0px;
+}
+
+.background {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    z-index: -100;
 }
 
 @media (max-width:767px) {
@@ -954,7 +967,8 @@ pre .keyword, pre .javascript .function {
 }
 
 .header {
-    background: #fff
+    background: #fff;
+    /* overflow: hidden; */
 }
 
 .header-inner {
@@ -1083,6 +1097,7 @@ pre .keyword, pre .javascript .function {
 }
 
 /* Note: the css effect of menu-item is covered by a more specific menu-item a */
+
 .menu .menu-item a {
     display: block;
     margin: 0 25px;
@@ -1160,7 +1175,6 @@ body.gradient {
         background-position: 0% 50%;
     }
 }
-
 
 /* ********************************
    My animation section ended here 
@@ -2339,8 +2353,8 @@ hr {
 }
 
 .site-meta {
-    float: left;
-    margin-left: -20px;
+    position: absolute;
+    left: -300px;
 }
 
 @media (max-width:767px) {
@@ -2379,6 +2393,7 @@ hr {
     Site logo + animation
     *************************
 */
+
 .logo-line-before, .logo-line-after {
     display: block;
     overflow: hidden;
@@ -2423,14 +2438,22 @@ hr {
 }
 
 /* Navbar item animations and styles */
-@keyframes slide-down {
+
+@keyframes appear-from-background {
     from {
-        margin-top: 300%;
+        /* margin-top: 100%;
+        height: 300% */
+
+        /* alterantive animation: appear from the background */
+        opacity: 0.0
     }
     to {
-        margin-top: 0%;
-    }
+        /* top: 0%;
+        height: 100% */
 
+        /* alterantive animation: appear from the background */
+        opacity: 1.0
+    }
 }
 
 .menu {
@@ -2452,6 +2475,7 @@ hr {
 
 .menu .menu-item {
     margin: 0;
+    overflow: hidden;
 }
 
 @media (max-width:767px) {
@@ -2465,12 +2489,13 @@ hr {
     background: none;
     border: none;
     transition-property: background;
+    /* animation-name: slide-down;
+    animation-duration: 0s; */
 }
 
-.menu-item-icon {
-    animation-name: slide-down;
-    animation-duration: 1.3s;
-}
+/* .menu-item-icon {
+
+} */
 
 @media (max-width:767px) {
     .menu .menu-item a {
@@ -2507,8 +2532,6 @@ hr {
         float: none
     }
 }
-
-
 
 .posts-expand {
     padding-top: 0;
@@ -2806,6 +2829,7 @@ code {
 }
 
 /* skill tree */
+
 .circle {
     border-radius: 50%;
     border: 3px solid grey;
@@ -2866,22 +2890,22 @@ code {
     position: absolute;
 }
 
-
 /* ***************
     CSS added by me
    ***************
 */
+
 .navbar-name {
     font-family: "Luminari", Georgia, "Times New Roman", Times, serif;
-    font-size: 60px;
+    font-size: 30px;
 }
 
-
 /* logo line above and blow the logo */
+
 @keyframes slide-from-left {
     from {
         margin-left: 300%;
-    }   
+    }
     to {
         margin-left: 0%;
     }
@@ -2904,6 +2928,7 @@ code {
 }
 
 /* TODO: try to figure out a way to refactor the code to avoid repetitions */
+
 .logo-line-above i {
     position: relative;
     display: block;
@@ -2917,11 +2942,44 @@ code {
     position: relative;
     display: block;
     height: 2px;
-    background: #222; 
+    background: #222;
     animation-name: slide-from-left;
-    animation-duration: 1.3s;   
+    animation-duration: 1.3s;
 }
 
+/*  ***************
+    CSS Tree View
+    ************** */
 
+p.tree, ul.tree, ul.tree ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
+ul.tree ul {
+    margin-left: 1.0em;
+}
 
+ul.tree li {
+    margin-left: 0.35em;
+    border-left: thin solid #000;
+}
+
+ul.tree li:last-child {
+    border-left: none;
+}
+
+ul.tree li:before {
+    width: 0.9em;
+    height: 0.6em;
+    margin-right: 0.1em;
+    vertical-align: top;
+    border-bottom: thin solid #000;
+    content: "";
+    display: inline-block;
+}
+
+ul.tree li:last-child:before {
+    border-left: thin solid #000;
+}
