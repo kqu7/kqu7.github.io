@@ -271,7 +271,7 @@ h2 {
 }
 
 h3 {
-    font-size: 23px
+    font-size: 25px
 }
 
 @media (max-width:767px) {
@@ -504,7 +504,7 @@ html, body {
 
 .container {
     position: relative;
-    min-height: 100%
+    /* min-height: 100% */
 }
 
 .header-inner {
@@ -1109,6 +1109,7 @@ pre .keyword, pre .javascript .function {
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
+    border-radius: 5px;
 }
 
 .menu .menu-item a:hover {
@@ -1158,10 +1159,12 @@ animation effects added by me
 
 /* Diagonal Color Gradients by Alison Quaglia */
 
-body.gradient {
+.gradient {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
+    /* position: relative; */
+    /* z-index: 1000; */
 }
 
 @keyframes gradient {
@@ -1175,6 +1178,7 @@ body.gradient {
         background-position: 0% 50%;
     }
 }
+
 
 /* ********************************
    My animation section ended here 
@@ -2961,6 +2965,9 @@ a.index-page-icon-link:link {
     color: #00008b;
 }
 
+
+
+
 /*  ***************
     CSS Tree View
     ************** */
@@ -2987,7 +2994,7 @@ ul.tree li:last-child {
 ul.tree li:before {
     width: 1.7em;
     height: 1em;
-    margin-right: 0.1em;
+    margin-right: 0.3em;
     vertical-align: top;
     border-bottom: thin solid #000;
     content: "";
@@ -2998,9 +3005,9 @@ ul.tree li:last-child:before {
     border-left: thin solid #000;
 }
 
-/*  *************
-    External Font
-    ************* */
+/*  *************************
+    External Font Importation
+    ************************* */
 
 @font-face {
     font-family: "Old English Text MT";
@@ -3011,7 +3018,7 @@ ul.tree li:last-child:before {
 
 
 /* ************************
-   About me CSS added by me
+   about_me.html CSS added by me
    ************************ */ 
 
 .anime-container {
@@ -3023,3 +3030,51 @@ ul.tree li:last-child:before {
     width: 100%;
     height: 100%;
 }
+
+
+/*  ***********************************************************************
+    project.html referenced from Haoran Zhu and additional ones added by me
+    *********************************************************************** */
+
+span.group_members {
+    color: blueviolet;
+}
+
+
+/* ************************
+   navbar.html CSS added by me
+   ************************ */ 
+@media only screen and (max-width: 800px) {
+    .custom-logo-site {
+        position: sticky;
+        left: 30px;
+    }
+}
+
+
+/* ************************
+   index.html CSS added by me
+   ************************ */ 
+
+.personal_info {
+    color: #000;
+    font-size: 17.7px;
+}
+
+
+/* ************************
+   about.html CSS added by me
+   ************************ */ 
+#anime-intro-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 10;
+
+    /* fade out when deleting */
+    opacity: 1;
+    -webkit-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
+  }

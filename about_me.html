@@ -3,6 +3,45 @@ layout: default
 title: "Kai Qu: about me"
 ---
 
+<!-- TODO: get a customized section for styling in default.html and make this part in it -->
+<style>
+  .header-inner {
+    margin-bottom: 0px;
+  }
+</style>
+
+<video autoplay muted plays-inline id="anime-intro-video">
+  <source src="/assets/videos/ef-corridor.webm" type="video/webm">
+  <source src="/assets/videos/ef-corridor-h264.mp4" type='video/mp4; codecs="avc1.4d002a, mp4a.40.2"'>
+  <source src="/assets/videos/ef-corridor.mp4" type="video/mp4">
+</video>
+
+<!-- anime intro video script -->
+<!-- when user clicks the frame, exits the anime-intro -->
+<script type='text/javascript'>
+  document.getElementById('anime-intro-video').onclick = function (e) {
+    // TODO: remove the repetitive code
+    var video = document.getElementById("anime-intro-video");
+
+    video.style.opacity = '0';
+    setTimeout(function() {
+      video.parentNode.removeChild(video);
+    }, 1000);
+  };
+
+  document.getElementById('anime-intro-video').addEventListener('ended', myHandler, false);
+  function myHandler(e) {
+      // What you want to do after the event
+      var video = document.getElementById("anime-intro-video");
+
+      video.style.opacity = '0';
+      setTimeout(function() {
+        video.parentNode.removeChild(video);
+      }, 1000);
+      // video.remove();
+  }
+</script>
+
 <div class="anime-container">
   <img class="anime-header" src="/assets/images/anime-header.webp" alt="anime-header">
 </div>
@@ -30,19 +69,23 @@ title: "Kai Qu: about me"
             </li>
           </ul>
 
+          <br>
+
           <p class="tree">Interests</p>
           <ul class="tree">
             <li>
-              I enjoy jogging and reading in my spare time.
+              I enjoy jogging and reading in spare time.
               <ul>
                 <li>
                   Finished my first half marathon at
-                  <a href="https://www.charlottesvillemarathon.com/" rel="external" target="_blank">
+                  <a class="index-page-link" href="https://www.charlottesvillemarathon.com/" rel="external" target="_blank">
                     Charlottesville Marathon</a> in 2019.
                 </li>
               </ul>
             </li>
           </ul>
+
+          <br>
 
           <p class="tree">Anime</p>
           <ul class="tree">
@@ -52,8 +95,8 @@ title: "Kai Qu: about me"
                 <li> Started watching anime since high school and fell in love with this beautiful world immediately
                 </li>
                 <li>
-                  My favorite anime (for now):
-                  <a href="https://en.wikipedia.org/wiki/Samurai_Champloo" rel="external" target="_blank">
+                  Favorite anime for now:
+                  <a class="index-page-link" href="https://en.wikipedia.org/wiki/Samurai_Champloo" rel="external" target="_blank">
                     Samurai Champloo</a>, as its vision of life as an adventure, careless attituedes, artistic styles and soundtrack 
                     intrigue me
                 </li>
@@ -66,7 +109,3 @@ title: "Kai Qu: about me"
     </div>
   </div>
 </div>
-
-</body>
-
-</html>
