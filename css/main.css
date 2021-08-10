@@ -271,7 +271,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px
+    font-size: 23px
 }
 
 @media (max-width:767px) {
@@ -317,7 +317,7 @@ p {
 a {
     color: #555;
     text-decoration: none;
-    border-bottom: 1px solid #999;
+    /* border-bottom: 1px solid #999; */
     word-wrap: break-word;
 }
 
@@ -1086,7 +1086,7 @@ pre .keyword, pre .javascript .function {
 
 .menu .menu-item {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 30px;
 }
 
 @media screen and (max-width:767px) {
@@ -2317,9 +2317,9 @@ p {
     margin: 0 0 25px 0
 }
 
-a {
+/* a {
     border-bottom-color: #ccc
-}
+} */
 
 hr {
     margin: 20px 0;
@@ -2443,14 +2443,12 @@ hr {
     from {
         /* margin-top: 100%;
         height: 300% */
-
         /* alterantive animation: appear from the background */
         opacity: 0.0
     }
     to {
         /* top: 0%;
         height: 100% */
-
         /* alterantive animation: appear from the background */
         opacity: 1.0
     }
@@ -2485,7 +2483,7 @@ hr {
 }
 
 .menu .menu-item a {
-    padding: 5px 10px;
+    padding: 5px 12px;
     background: none;
     border: none;
     transition-property: background;
@@ -2896,7 +2894,7 @@ code {
 */
 
 .navbar-name {
-    font-family: "Luminari", Georgia, "Times New Roman", Times, serif;
+    font-family: "Old English Text MT", "Luminari", Georgia, "Times New Roman", Times, serif;
     font-size: 30px;
 }
 
@@ -2947,6 +2945,22 @@ code {
     animation-duration: 1.3s;
 }
 
+/* index style */
+
+a.index-page-link:link {
+    text-decoration: none;
+    color: #00008b;
+}
+
+a.index-page-link:hover {
+    text-decoration: underline;
+}
+
+a.index-page-icon-link:link {
+    text-decoration: none;
+    color: #00008b;
+}
+
 /*  ***************
     CSS Tree View
     ************** */
@@ -2958,7 +2972,7 @@ p.tree, ul.tree, ul.tree ul {
 }
 
 ul.tree ul {
-    margin-left: 1.0em;
+    margin-left: 2.0em;
 }
 
 ul.tree li {
@@ -2971,8 +2985,8 @@ ul.tree li:last-child {
 }
 
 ul.tree li:before {
-    width: 0.9em;
-    height: 0.6em;
+    width: 1.7em;
+    height: 1em;
     margin-right: 0.1em;
     vertical-align: top;
     border-bottom: thin solid #000;
@@ -2982,4 +2996,30 @@ ul.tree li:before {
 
 ul.tree li:last-child:before {
     border-left: thin solid #000;
+}
+
+/*  *************
+    External Font
+    ************* */
+
+@font-face {
+    font-family: "Old English Text MT";
+    src: url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.eot");
+    src: url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.woff") format("woff"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.svg#Old English Text MT") format("svg");
+}
+
+
+
+/* ************************
+   About me CSS added by me
+   ************************ */ 
+
+.anime-container {
+    width: 100%;
+    height: 30%;
+}
+
+.anime-header {
+    width: 100%;
+    height: 100%;
 }
