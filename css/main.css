@@ -19,6 +19,11 @@ body {
     padding: 10px;
 }
 
+.container.center {
+    width: 69%;
+}
+
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block
 }
@@ -2359,8 +2364,9 @@ hr {
 }
 
 .site-meta {
+    margin-top: 0.5%;
     position: absolute;
-    left: -500px;
+    left: 13%;
 }
 
 @media (max-width:767px) {
@@ -2774,7 +2780,8 @@ code {
 
 /* Copy from Shenghui Cheng's Resume Section */
 .resume {
-    margin-top: 5%;
+    margin-left: 10%;
+    margin-top: 3%;
     font-family: times;
     font-size: 17px;
 }
@@ -2906,7 +2913,7 @@ code {
 
 .navbar-name {
     font-family: "Old English Text MT", "Luminari", Georgia, "Times New Roman", Times, serif;
-    font-size: 30px;
+    font-size: 2.3vh;
 }
 
 .name_en {
@@ -3028,6 +3035,13 @@ ul.tree li:last-child:before {
     src: url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.woff") format("woff"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.svg#Old English Text MT") format("svg");
 }
 
+@font-face {
+    font-family: Romentic;
+    /* src: url(./assets/fonts/Romentic.ttf) format('truetype'), */
+    src: url(/assets/fonts/Romentic.woff) format('truetype');
+  }
+
+
 
 
 /* ************************
@@ -3036,7 +3050,7 @@ ul.tree li:last-child:before {
 
 .anime-container {
     width: 100%;
-    height: 30%;
+    height: 37%;
 }
 
 .anime-header {
@@ -3100,3 +3114,47 @@ div.links {
     transition: opacity 1000ms linear;
   }
 
+/*  ************ 
+    List Styling
+    ************ */
+
+    /* ul.custom {
+        line-height: 1.5em;
+        margin: 5px 0 15px;
+        padding: 0;
+      }
+      
+    li.custom {
+        list-style: none;
+        position: relative;
+        padding: 0 0 0 20px;
+      }
+
+
+    li.heart::before, li.heart::after {
+        content: ""; 
+        position: absolute; 
+        left: 7px; 
+        top: 5px; 
+        width: 7px; 
+        height: 12px; 
+        background: #f9dd94;
+        border-radius: 50px 50px 0 0; 
+        transform: rotate(-45deg); 
+        transform-origin: 0 100%;
+      }
+      
+      li.heart::after {
+        content: ""; 
+        position: absolute; 
+        top: 5px; 
+        left: 0; 
+        transform: rotate(45deg); 
+        transform-origin: 100% 100%;
+      } */
+
+.about-header {
+    font-size: 16px;
+    /* font-style: italic; */
+    font-family: Romentic;
+}

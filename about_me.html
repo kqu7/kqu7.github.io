@@ -8,6 +8,30 @@ title: "Kai Qu: about me"
   .header-inner {
     margin-bottom: 0px;
   }
+
+  .gradient {
+    background: linear-gradient(-45deg, #ffffff, #c6dbdf, #b4caca);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    /* position: relative; */
+    /* z-index: 1000; */
+  }
+
+  .body {
+    background-color: #f7f7f7
+  }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
 </style>
 
 <video autoplay muted plays-inline id="anime-intro-video">
@@ -43,10 +67,10 @@ title: "Kai Qu: about me"
 </script>
 
 <div class="anime-container">
-  <img class="anime-header" src="/assets/images/anime-header.webp" alt="anime-header">
+  <img class="anime-header" src="/assets/images/lovely.jpeg" alt="anime-header">
 </div>
 
-<div class="container" id="main_body">
+<div class="container center" id="main_body">
   <div class="row">
     <div class="col-md-12">
       <div class="page_header center">
@@ -54,10 +78,10 @@ title: "Kai Qu: about me"
       </div>
       <div class="body_content">
         <div class="center">
-          <p class="page_intro">This page shares some of my interests and details about myself. </p>
 
           <!-- <p class="tree">Info</p> -->
-          Info
+          <i class="fa fa-adjust" style="margin: 6px 0px 3px 7px; font-size: 13px; padding: 5px"></i>
+          <span class="about-header">Info</span>
           <ul>
             <li>
               Name: CN: 瞿锴 (Last Name: Qu; First Name: Kai) | EN: Kai
@@ -72,14 +96,15 @@ title: "Kai Qu: about me"
 
           <br>
 
-          Interests
+          <i class="fa fa-connectdevelop" style="margin: 6px 0px 3px 7px; font-size: 13px; padding: 5px"></i>
+          <span class="about-header">Interests</span>
           <ul>
             <li>
               I enjoy jogging and reading in spare time.
               <ul>
                 <li>
                   Finished my first half marathon at
-                  <a class="index-page-link" href="https://www.charlottesvillemarathon.com/" rel="external" target="_blank">
+                  <a class="index-page-link preview" href="https://www.charlottesvillemarathon.com/" rel="external" target="_blank">
                     Charlottesville Marathon</a> in 2019.
                 </li>
               </ul>
@@ -88,16 +113,17 @@ title: "Kai Qu: about me"
 
           <br>
 
-          Anime
-          <ul>
+          <i class="fa fa-adn" style="margin: 6px 0px 3px 7px; font-size: 13px; padding: 5px"></i>
+          <span class="about-header">Anime</span>
+          <ul class="custom">
             <li>
               Big fan of anime.
-              <ul>
-                <li> Started watching anime since high school and fell in love with this beautiful world immediately
+              <ul class="custom">
+                <li class="custom heart"> Started watching anime since high school and fell in love with this beautiful world immediately
                 </li>
                 <li>
                     Favorite anime for now:
-                    <a class="index-page-link" href="https://en.wikipedia.org/wiki/Samurai_Champloo" rel="external" target="_blank">
+                    <a class="index-page-link preview" href="https://en.wikipedia.org/wiki/Samurai_Champloo" rel="external" target="_blank">
                       Samurai Champloo</a>, as its vision of life as an adventure, careless attituedes, artistic styles and soundtrack 
                       intrigue me
                 </li>
