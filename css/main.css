@@ -508,7 +508,8 @@ html, body {
 }
 
 .container {
-    position: relative;
+    display: flex;
+    /* position: relative; */
     /* min-height: 100% */
 }
 
@@ -1134,12 +1135,12 @@ animation effects added by me
 
 @keyframes slidein {
     from {
-        margin-bottom: 100%;
-        width: 300%;
+        bottom: -100;
+        /* width: 300%; */
     }
     to {
-        margin-bottom: 0%;
-        width: 100%;
+        bottom: 0;
+        /* width: 100%; */
     }
 }
 
@@ -1148,9 +1149,10 @@ animation effects added by me
 .ease_in_animation {
     animation-name: slidein;
     animation-duration: 2s;
+    overflow: hidden;
 }
 
-.ease_in_animation .ease_in_animation li {
+/* .ease_in_animation .ease_in_animation li {
     display: block;
     font-size: 13px;
     text-transform: capitalize;
@@ -1160,7 +1162,7 @@ animation effects added by me
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
-}
+} */
 
 /* Diagonal Color Gradients by Alison Quaglia */
 
@@ -2795,8 +2797,9 @@ code {
 }
 
 .resume .resume-item {
-    padding: 0 0 20px 20px;
+    padding: 0 0 0px 20px;
     margin-top: -2px;
+    margin-bottom: 30px;
     border-left: 2px solid #1f5297;
     position: relative;
 }
@@ -3051,10 +3054,11 @@ ul.tree li:last-child:before {
 .anime-container {
     width: 100%;
     height: 37%;
+    background-color: rgb(250, 250, 250);
 }
 
 .anime-header {
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
 
@@ -3081,6 +3085,34 @@ span.group_members {
         left: 30px;
     }
 }
+
+/* .navbar-nav {
+    padding-left: 30%;
+    gap: 25%;
+} */
+
+/* .navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+} */
+
+/* .navbar-collapse.center .navbar-inner {
+    text-align: center;
+    display: inline-block;
+    float: none;
+}
+.navbar-collapse.center .nav-item.center .navbar-inner .nav {
+    float: none;
+    display:inline-block;
+    vertical-align: middle;
+} */
 
 
 /* ************************
@@ -3158,3 +3190,4 @@ div.links {
     /* font-style: italic; */
     font-family: Romentic;
 }
+
