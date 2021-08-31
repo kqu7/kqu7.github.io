@@ -2543,7 +2543,7 @@ hr {
     float: left;
 }
 
-@media (max-width:767px) {
+/* @media (max-width:767px) {
     .menu-left {
         float: none
     }
@@ -2561,9 +2561,9 @@ hr {
     .posts-expand .post-title, .posts-expand .post-meta {
         text-align: center
     }
-}
+} */
 
-.posts-expand .post-eof {
+/* .posts-expand .post-eof {
     display: none
 }
 
@@ -2688,9 +2688,9 @@ hr {
     outline: none;
     border-bottom: 1px solid #999;
     opacity: .5;
-}
+} */
 
-.site-search input:focus {
+/* .site-search input:focus {
     opacity: 1
 }
 
@@ -2729,9 +2729,9 @@ hr {
     padding: 10px 0;
     background: #f5f5f5;
     color: #666
-}
+} */
 
-.footer-inner {
+/* .footer-inner {
     margin: 0 auto;
     text-align: left;
 }
@@ -2749,9 +2749,9 @@ a.at-share-btn:hover {
 
 .post-spread {
     text-align: left
-}
+} */
 
-.posts-expand .post-nav {
+/* .posts-expand .post-nav {
     margin-top: 15px
 }
 
@@ -2774,15 +2774,15 @@ a.at-share-btn:hover {
     color: #808080;
     font-size: .9em;
     text-align: center
-}
+} */
 
-code {
+/* code {
     padding: .2em 0;
     font-size: 14px;
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 3px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace
-}
+} */
 
 /* Copy from Shenghui Cheng's Resume Section */
 .resume {
@@ -2797,7 +2797,7 @@ code {
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #050d18;
+    color: #0547a2;
 }
 
 .resume .resume-item {
@@ -3089,12 +3089,18 @@ canvas {
     opacity: 0.15
 }
 
+.b-profile-text {
+    line-height: 2.3em
+}
+
+
 .b-profile-text h1, .b-profile-text h2 {
     font-weight: 500;
     padding-bottom: 10px;
     margin-bottom: 5px;
     width: 100%;
     position: relative;
+    color:  #0245ab;
 }
 
 .b-profile-text h1:before, .b-profile-text h2:before {
@@ -3113,6 +3119,22 @@ canvas {
     height: 2px;
     background-color: #ddd;
 }
+
+
+h1.b-about-title {
+    font-size: 32px;
+    color: black
+}
+
+h1.b-about-title:before {
+    content: None
+}
+
+h1.b-about-title:after {
+    content: None
+}
+
+
 
 .b-profile-text h1:not(:first-child), .b-profile-text h2:not(:first-child), .b-profile-text h3:not(:first-child) {
     margin-top: 20px;
@@ -3150,7 +3172,7 @@ h3 {
 }
 
 .increased-separation  {
-    line-height: 200%;
+    line-height: 2.3em;
 }
 
 span.inline-block {
