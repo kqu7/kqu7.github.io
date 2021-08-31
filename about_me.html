@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Kai Qu: about me"
+title: "Kai Qu: About Me"
+permalink: /about/
 ---
 
 <!-- TODO: get a customized section for styling in default.html and make this part in it -->
@@ -23,22 +24,23 @@ title: "Kai Qu: about me"
 
   @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
     }
+
     50% {
-        background-position: 100% 50%;
+      background-position: 100% 50%;
     }
+
     100% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
     }
   }
 </style>
 
-<video autoplay muted plays-inline id="anime-intro-video">
+<!-- <video autoplay muted plays-inline id="anime-intro-video">
   <source src="/assets/videos/ef-shortened.webm" type="video/webm">
-  <!-- <source src="/assets/videos/ef-corridor-h264.mp4" type='video/mp4; codecs="avc1.4d002a, mp4a.40.2"'> -->
   <source src="/assets/videos/ef-shortened.mp4" type="video/mp4">
-</video>
+</video> -->
 
 <!-- anime intro video script -->
 <!-- when user clicks the frame, exits the anime-intro -->
@@ -48,91 +50,89 @@ title: "Kai Qu: about me"
     var video = document.getElementById("anime-intro-video");
 
     video.style.opacity = '0';
-    setTimeout(function() {
+    setTimeout(function () {
       video.parentNode.removeChild(video);
     }, 1000);
   };
 
   document.getElementById('anime-intro-video').addEventListener('ended', myHandler, false);
   function myHandler(e) {
-      // What you want to do after the event
-      var video = document.getElementById("anime-intro-video");
+    // What you want to do after the event
+    var video = document.getElementById("anime-intro-video");
 
-      video.style.opacity = '0';
-      setTimeout(function() {
-        video.parentNode.removeChild(video);
-      }, 1000);
-      // video.remove();
+    video.style.opacity = '0';
+    setTimeout(function () {
+      video.parentNode.removeChild(video);
+    }, 1000);
+    // video.remove();
   }
 </script>
 
-<div class="anime-container">
+<!-- <div class="anime-container">
   <img class="anime-header" src="/assets/images/lovely.jpeg" alt="anime-header">
-</div>
+</div> -->
+
+<div class="b-background"
+  style="background-image: url(&quot;https://ae01.alicdn.com/kf/H6f5aa1b61bee42f5bc051536c05eccac2.jpg&quot;);"></div>
 
 <div class="container center" id="main_body">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="page_header center">
-        <h3 class="page_name">About Me</h3>
-      </div>
-      <div class="body_content">
-        <div class="center">
+  <!-- <div class="page_header center">
+    <h3 class="page_name">About Me</h3>
+  </div> -->
 
-          <!-- <p class="tree">Info</p> -->
-          <i class="fa fa-adjust" style="margin: 6px 0px 3px 7px; font-size: 13px; padding: 5px"></i>
-          <span class="about-header">Info</span>
-          <ul>
-            <li>
-              Name: CN: 瞿锴 (Last Name: Qu; First Name: Kai) | EN: Kai
-            </li>
-            <li>
-              I was born in Hangzhou, a city in the southern part of China, but grew up in Beijing.
-            </li>
-            <li>
-              I speak Chinese (native), English (fluent) and Japanese (moderate).
-            </li>
-          </ul>
+  <div class="b-about">
+    <div class="center b-profile-text">
 
-          <br>
+      <!-- <p class="tree">Info</p> -->
+      <!-- <i class="fa fa-adjust" style="margin: 6px 0px 3px 7px; font-size: 13px; padding: 5px"></i> -->
+      <h1>Info</h1>
+      <!-- <h3>More Info</h3> -->
+      <p class="increased-separation">
+        Name: CN: <code>瞿锴</code> (QuKai) | EN: <code>Kai</code>
+        <br>
+        I was born in <code>Hangzhou</code>, a city in the southern part of China, but grew up in <code>Beijing</code>.
+        <br>
+        I speak Chinese (native), English (fluent) and Japanese (moderate).
+        <br>
+        height: ???  weight: ??? <img class="inline-img" src="/assets/images/naive.jpeg"></img>
+      </p>
 
-          <i class="fa fa-connectdevelop" style="margin: 6px 0px 3px 7px; font-size: 13px; padding: 5px"></i>
-          <span class="about-header">Interests</span>
-          <ul>
-            <li>
-              I enjoy jogging and reading in spare time.
-              <ul>
-                <li>
-                  Finished my first half marathon at
-                  <a class="index-page-link preview" href="https://www.charlottesvillemarathon.com/" rel="external" target="_blank">
-                    Charlottesville Marathon</a> in 2019.
-                </li>
-              </ul>
-            </li>
-          </ul>
+      <!-- <i class="fa fa-connectdevelop" style="margin: 6px 0px 3px 7px; font-size: 13px; padding: 5px"></i> -->
+      <h1>Interests</h1>
+      <h3>Running</h3>
+      I enjoy <code>jogging</code> in spare time. (Tempo, )
+      Finished my <code>first half marathon</code> at
+      <a class="index-page-link preview" href="https://www.charlottesvillemarathon.com/" rel="external" target="_blank">
+        Charlottesville Marathon</a> in 2019. Now run about 4 miles everyday. 
+      <br>
 
-          <br>
+      <h3>Reading</h3>
+      Enjoy reading <code>detective novels</code>. Never able to figure out the plot by myself though <span class='inline-block'>°(°ˊДˋ°) °</span>
+      <br>
+      <code>Favorite detective novel author</code>: Edogawa Rampo. Not only the plot is intriguing but also the motivation behind the
+      crime is also unique, having a sense of the depraved beauty
 
-          <i class="fa fa-adn" style="margin: 6px 0px 3px 7px; font-size: 13px; padding: 5px"></i>
-          <span class="about-header">Anime</span>
-          <ul class="custom">
-            <li>
-              Big fan of anime.
-              <ul class="custom">
-                <li class="custom heart"> Started watching anime since high school and fell in love with this beautiful world immediately
-                </li>
-                <li>
-                    Favorite anime for now:
-                    <a class="index-page-link preview" href="https://en.wikipedia.org/wiki/Samurai_Champloo" rel="external" target="_blank">
-                      Samurai Champloo</a>, as its vision of life as an adventure, careless attituedes, artistic styles and soundtrack 
-                      intrigue me
-                </li>
-            </li>
-          </ul>
-          <!-- <img class="fun_pics" src="assets/images/books.jpg" alt="booksr" height=195px>
-              <img class="fun_pics" src="assets/images/running.jpg" alt="running" height=195px> -->
-        </div>
-      </div>
+      <h3>Music</h3>
+      <code>Favorite singer</code>: Aimer. Her voice is powerful and comforting. I remembered the sense of lonliness but also the inner peace 
+      when listening Polaris along at night
+      <br>
+      Also likes Milet, YOASOBI, Minami, Yorushika
+
+
+
+      <!-- <i class="fa fa-adn" style="margin: 6px 0px 3px 7px; font-size: 13px; padding: 5px"></i> -->
+      <h2>Anime</h2>
+      I am a big fan of <code>anime</code>. Started watching anime since <code>high school</code> and fell in love with this beautiful
+      world immediately <br>
+      Start of everything. The reason I start paying attention to Japanese culture <br>
+      <code>Favorite anime for now</code>:
+      <a class="index-page-link preview" href="https://en.wikipedia.org/wiki/Samurai_Champloo" rel="external"
+        target="_blank">
+        Samurai Champloo</a>, as its vision of life as an adventure, careless attituedes, artistic styles and
+      soundtrack intrigue me
+      <!-- <img class="fun_pics" src="assets/images/books.jpg" alt="booksr" height=195px>
+          <img class="fun_pics" src="assets/images/running.jpg" alt="running" height=195px> -->
+
     </div>
   </div>
 </div>

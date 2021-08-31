@@ -23,6 +23,10 @@ body {
     width: 69%;
 }
 
+.b-profile-text.center {
+    width: 79%
+}
+
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block
@@ -2976,7 +2980,7 @@ code {
     list-style: none; 
 }
 
-a.index-page-link:link {
+a.index-page-link {
     text-decoration: none;
     color: #00008b;
 }
@@ -3066,6 +3070,98 @@ canvas {
     position: fixed;
 }
 
+
+/* baka-fun css */ 
+.b-background, .b-background-cover {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.b-background {
+    z-index: -2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    opacity: 0.15
+}
+
+.b-profile-text h1, .b-profile-text h2 {
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.b-profile-text h1:before, .b-profile-text h2:before {
+    content: "#";
+    color: #2196f3;
+    padding-right: 5px;
+    font-weight: 700;
+}
+
+.b-profile-text h1:after, .b-profile-text h2:after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+}
+
+.b-profile-text h1:not(:first-child), .b-profile-text h2:not(:first-child), .b-profile-text h3:not(:first-child) {
+    margin-top: 20px;
+}
+
+.b-profile-text h3 {
+    border-left: 5px solid #2196f3;
+    padding-left: 8px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.b-profile-text code {
+    color: #2600ff;
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.none-list {
+    list-style: none;
+}
+
+.increased-separation  {
+    line-height: 200%;
+}
+
+span.inline-block {
+    display: inline-block;
+}
+
+img.inline-img {
+    display: inline-block;
+    height: 8%;
+    width: 8%;
+}
 
 /*  ***********************************************************************
     project.html referenced from Haoran Zhu and additional ones added by me
