@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Kai Qu: projects"
+title: "Kai Qu - Project"
 permalink: /project/
 ---
 
@@ -18,13 +18,59 @@ permalink: /project/
           <h5>Kaggle Cassava Leaf Disease Image Classification Task<small style="font-size: 0.8rem"> (Spring 2021)</small></h5>
           <span class="tab"><span class="group_members">Individual Project</span>
           <br>
-          <span class="tab">We implemented four different algorithms (branch and bound, approximation, and two variations of local search algorithms) attempting to cope with
-            a well-known NP-hard problem in graph theory, the minimum vertex cover (MVC). We measured the performance of different algorithms in terms of running time and
-            relative error, finding that one variation of the implemented local searches performed best in terms of the above two criterias but the performance depended significantly
-            on the starting point of the search.
+          <span class="tab">Cassava Leaf Disease Classification is a multiclass classification competition held at Kaggle (https://www.kaggle.com/c/cassava-leaf-disease-classification).
+             As the second-largest provider of carbohydrates in Africa, cassava is a key food security crop grown by smallholder farmers. However, viral diseases are major sources of poor yields, 
+             and to diagnose diseases, farmers require the help of agricultural experts to visually inspect the plants, which is labor-intensive and time-consuming. The objective of this competition
+              is to identify the common diseases with the help of data science and machine learning.
+          </span>
           <br>
-          <span class="tab">In addition, we analyzed the theoretical time and space complexities of the four algorithms, comparing the theoretical time complexities to the actual
-            running time and providing reasons for some inconsistencies on certain graph instances.
+          <span class="tab">In this competition, the train dataset includes 21,367 labelled images of Cassava leaves with four categories of diseases or healthy Cassava leaves. The task is to classify 
+            each image into one of the five categories mentioned above.
+          </span>
+          <br>
+          <span class="tab">
+            In this project, I built an end-to-end machine learning pipeline and ensembled a 3-model classifier trained on a dataset of 30,000 images
+            To combat the noise within the data, I applied CUTMIX, dataset augmentation, TTA, and various image transformations to reduce the noise within the data
+            I trained Trained models that had 90% accuracy on the 5-fold validation and ranked 84/3947 (top 3%) in the private leader board            
+          </span>
+          <br>
+          <span class="tab">
+            <span class="tab">Github link: <a href="https://kqu7.github.io/assets/reports/algorithm_prj_report.pdf">https://kqu7.github.io/assets/reports/algorithm_prj_report.pdf</a>
+          </span>
+
+          <div class="project-images">
+            <div class="project-image-wrapper">
+              <img class="project-image" src="https://via.placeholder.com/800x600" />
+            </div>
+            <div class="project-image-wrapper">
+              <img class="project-image" src="https://via.placeholder.com/1024x768" />
+            </div>
+            <div class="project-image-wrapper">
+              <img class="project-image" src="https://via.placeholder.com/1000x800" />
+            </div>
+            <div class="project-image-wrapper">
+              <img class="project-image" src="https://via.placeholder.com/500x800" />
+            </div>
+          </div>
+
+          <hr>
+
+          <h5>Evaluating the Impact of Highway Network Desing on Population Dynamics<small style="font-size: 0.8rem"> (Spring 2021)</small></h5>
+          <span class="tab"><span class="group_members">Group members: Ge Zhang, Zhe Song, Kai Qu [All members were CSE students at Georgia Tech.]</span>
+          <br>
+          <span class="tab">In this project, we aim to detect the impacts of road and highway network development on population dynamics under different 
+            scenarios using three models (single-species model, predator vs prey model, and multi-species interactions model) implemented in python
+          </span>
+          <br>
+          <span class="tab">For each model, we define the main behaviors of the population as growth and dispersal based on the reaction diffusion system, 
+            in which the dispersal can be considered as the emigration process by animal populations. Initially, we have three kinds of population distributions 
+            (uniform, clustered, and even distributions) to simulate the distributions of different species. Over generations of populations, we track the density of population and its growth, 
+            analyzing the sensitivity of different species on the locations of highways. 
+          </span>
+          <br>
+          <span class="tab">In conclusion, we observed that the construction site of highway roads has a significant impact on the population, killing three many times population when it is constructed 
+            in the center than when constructed on the peripheral sites. Also, by comparing the population change of different scenarios, we also discovered that the competitive relationship between species 
+            can result in a lower death rate caused by highroads.
           </span>
           <br>
           <span class="tab">The project report is available
@@ -45,6 +91,38 @@ permalink: /project/
               <img class="project-image" src="https://via.placeholder.com/500x800" />
             </div>
           </div>
+
+          <hr>
+
+          <h5>Simulation of Biology<small style="font-size: 0.8rem"> (Spring 2021)</small></h5>
+          <span class="tab"><span class="group_members">Individual Project</span>
+          <br>
+          <span class="tab">This is a course project for CS 7492 Simulation of Biology taken at Georgia Tech in Spring 2021. 
+          I implemented four classical models (game of life, SIR, Gray-Scott diffusion) that are frequently used in biological observation and analysis, using the programming language Processing.
+          <br>
+          <span class="tab">For the game of life simulation, a cellular automata simulator is written. Users can control or create cell patterns by using mouse clicks and can also enter single-step 
+            or continuous mode by using keystrokes. In the SIR model of disease transmission, a grid and agent based SIR epidemic simulator was implemented. Furthermore, a subpopulation graph that 
+            tracked the change of different populations (infected, uninfected, recovered) was also made to analyze the trends over time.  In the reaction-diffusion project, I simulated a reaction-diffusion 
+            system known as Gray-Scott and created patterns of spots, stripes or spiral waves by initializing the system with different parameter settings. 
+          </span>
+          <br>
+          <span class="tab">Github link: <a href="https://kqu7.github.io/assets/reports/algorithm_prj_report.pdf">https://kqu7.github.io/assets/reports/algorithm_prj_report.pdf</a>
+
+          <div class="project-images">
+            <div class="project-image-wrapper">
+              <img class="project-image" src="https://via.placeholder.com/800x600" />
+            </div>
+            <div class="project-image-wrapper">
+              <img class="project-image" src="https://via.placeholder.com/1024x768" />
+            </div>
+            <div class="project-image-wrapper">
+              <img class="project-image" src="https://via.placeholder.com/1000x800" />
+            </div>
+            <div class="project-image-wrapper">
+              <img class="project-image" src="https://via.placeholder.com/500x800" />
+            </div>
+          </div>
+
 
           <hr>
 
@@ -127,7 +205,7 @@ permalink: /project/
           <br>
           <span class="tab">The project report is available
           <a href="https://kqu7.github.io/assets/reports/sarcasm_detection_report.pdf" target="_blank">here</a>. Full implementation is also available
-          upon query. -->
+          upon query  -->
 
           <!-- <h5>DeepArt: Identify Artist from Painting<small style="font-size: 0.8rem"> (Fall 2019)</small></h5>
           <span class="tab"><span class="group_members">Group members: Daniel Xiao (zx8yz), Kai Qu(kq4ff), and Haoran Zhu (hz3fr)
@@ -147,17 +225,11 @@ permalink: /project/
           <span class="tab">The project report is available
           <a href="https://kqu7.github.io/assets/reports/deepart_report.pdf" target="_blank">here</a>. Full implementation is also available
           upon query.
-          <br> -->
+          <br>
       </div>
     </div>
   </div>
 </div>
-
-<!-- <footer id="footer" class="bg-dark text-white-50"><small>
-  Last Updated: 01/01/2021
-  <br>
-  Powered by <a href="http://getbootstrap.com" target="_blank">Bootstrap</a></small>
-</footer> -->
 
 </body>
 </html>

@@ -668,6 +668,23 @@ hr {
     width: 72%;
   }
 
+  .nav-link-fade-up {
+      color: rgb(222, 156, 211);
+      font-size: 16px;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+  .nav-link-fade-up::before {
+    width: 100%;
+    bottom: 5px;
+    opacity: 0;
+  }
+  
+  .nav-link-fade-up:hover::before {
+    bottom: 10px;
+    opacity: 1;
+  }
+
   @media (max-width: 991px) {
     .nav-link-ltr:hover::before {
         width: 100%;
@@ -772,19 +789,35 @@ hr {
     border: 2px solid #1f5297;
 }
 
-/* ***************
-    CSS added by me
-   ***************
-*/
+
+/* ************************
+   navbar CSS
+   ************************ */ 
+@media only screen and (max-width: 800px) {
+    .custom-logo-site {
+        position: sticky;
+        left: 30px;
+    }
+}
+
+.navbar {
+    z-index: 3;
+}
 
 .navbar-name {
-    font-family: "Old English Text MT", "Luminari", Georgia, "Times New Roman", Times, serif;
-    font-size: 2.3vh;
+    font-family: "Old English Text MT", Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
 }
 
 .name_en {
     margin-top: 100px;
 }
+
+.fixed-pos {
+    position: sticky;
+    width: 100%;
+    top: 0px;
+} 
 
 /* logo line above and blow the logo */
 
@@ -853,12 +886,22 @@ a.index-page-icon-link:link {
     color: #00008b;
 }
 
-
+/* Old English Font */
 @font-face {
     font-family: "Old English Text MT";
     src: url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.eot");
     src: url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.woff") format("woff"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.svg#Old English Text MT") format("svg");
 }
+
+/* @font-face {
+    font-family: "Old English Text MT";
+    src: url("//assets/fonts/f3258385782c4c96aa24fe8b5d5f9782.eot");
+    src: url("//assets/fonts/Old_English_Text_MT_V2.eot");
+    src: url("//assets/fonts/Old_English_Text_MT_V2.woff") format('woff'),
+         url('//assets/fonts/Old_English_Text_MT_V2.woff2'),
+         url('//assets/fonts/Old_English_Text_MT_V2.ttf'),
+  } */
+  
 
 @font-face {
     font-family: Romentic;
@@ -867,7 +910,7 @@ a.index-page-icon-link:link {
   }
 
 /* ************************
-   about_me.html CSS added by me
+   about_me CSS
    ************************ */ 
 
 .anime-container {
@@ -907,7 +950,7 @@ canvas {
 .b-profile-text {
     line-height: 2.7em;
     font-family: "Courier New", monospace;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
@@ -982,6 +1025,7 @@ h3 {
     border-radius: 5px;
     /* margin-left: 5px; */
     margin-right: 5px;
+    font-size: 14px;
 }
 
 .none-list {
@@ -998,12 +1042,12 @@ span.inline-block {
 
 img.inline-img {
     display: inline-block;
-    height: 8%;
-    width: 8%;
+    height: 6%;
+    width: 6%;
 }
 
 /*  ***********************************************************************
-    project.html referenced from Haoran Zhu and additional ones added by me
+    project CSS
     *********************************************************************** */
 
 span.group_members {
@@ -1020,16 +1064,6 @@ span.group_members {
 .project-img {
     width: 100%;
     height: 100%;
-}
-
-/* ************************
-   navbar.html CSS added by me
-   ************************ */ 
-@media only screen and (max-width: 800px) {
-    .custom-logo-site {
-        position: sticky;
-        left: 30px;
-    }
 }
 
 a:hover::after {
@@ -1062,7 +1096,7 @@ a:hover::after {
 
 
 /* ************************
-   index.html CSS added by me
+   index CSS
    ************************ */ 
 
 .personal_info {
@@ -1076,9 +1110,10 @@ div.links {
 
 
 /* ************************
-   about.html CSS added by me
+   about CSS
    ************************ */ 
-#anime-intro-video {
+
+/* #anime-intro-video {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -1086,11 +1121,10 @@ div.links {
     min-height: 100%;
     z-index: 10;
 
-    /* fade out when deleting */
     opacity: 1;
     -webkit-transition: opacity 1000ms linear;
     transition: opacity 1000ms linear;
-  }
+  } */
 
 .about-header {
     font-size: 16px;
