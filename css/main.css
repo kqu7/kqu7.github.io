@@ -10,8 +10,6 @@ body {
     margin: 0
 }
 
-/* Kai: center text */
-
 .center {
     margin: auto;
     width: 59%;
@@ -26,7 +24,6 @@ body {
 .b-profile-text.center {
     width: 79%
 }
-
 
 [hidden], template {
     display: none
@@ -47,7 +44,6 @@ abbr[title] {
 b, strong {
     font-weight: bold
 }
-
 
 body {
     position: relative;
@@ -225,7 +221,6 @@ img {
     text-transform: capitalize
 }
 
-
 .header-inner {
     margin: 0 auto;
     padding: 15px 0 70px;
@@ -281,7 +276,6 @@ img {
 .header-inner {
     position: relative
 }
-
 
 .brand {
     position: relative;
@@ -388,8 +382,6 @@ img {
     }
 }
 
-/* Note: the css effect of menu-item is covered by a more specific menu-item a */
-
 .menu .menu-item a {
     display: block;
     margin: 0 25px;
@@ -413,42 +405,9 @@ img {
     margin: 0 30px;
 }
 
-/* ****************************
-animation effects added by me 
-***************************** */
-
-/* Diagonal Color Gradients by Alison Quaglia */
-
-.gradient {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    /* position: relative; */
-    /* z-index: 1000; */
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-
-/* ********************************
-   My animation section ended here 
-   ******************************** */
-
-
 h1, h2, h3, h4, h5, h6 {
     margin: 20px 0 10px
 }
-
 
 p {
     margin: 0 0 25px 0
@@ -630,12 +589,9 @@ hr {
     animation-duration: 0s; */
 }
 
-/* .menu-item-icon {
+/* Code Pen */
 
-} */
-
-  /* Code Pen */
-  .nav-link {
+.nav-link {
     font-weight: bold;
     font-size: 14px;
     text-decoration: none;
@@ -645,52 +601,52 @@ hr {
     display: inline-block;
     position: relative;
     opacity: 0.95;
-  }
-  
-  .nav-link:hover {
-    opacity: 1;
-  }
+}
 
-  .nav-link::before {
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link::before {
     transition: 300ms;
     height: 2px;
     content: "";
     position: absolute;
     background-color: #031D44;
-  }
-  
-  .nav-link-ltr::before {
+}
+
+.nav-link-ltr::before {
     width: 0%;
     bottom: 2px;
-  }
-  
-  .nav-link-ltr:hover::before {
+}
+
+.nav-link-ltr:hover::before {
     width: 72%;
-  }
+}
 
-  .nav-link-fade-up {
-      color: rgb(222, 156, 211);
-      font-size: 16px;
-      font-family: 'Times New Roman', Times, serif;
-  }
+.nav-link-fade-up {
+    color: rgb(222, 156, 211);
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
 
-  .nav-link-fade-up::before {
+.nav-link-fade-up::before {
     width: 100%;
     bottom: 5px;
     opacity: 0;
-  }
-  
-  .nav-link-fade-up:hover::before {
+}
+
+.nav-link-fade-up:hover::before {
     bottom: 10px;
     opacity: 1;
-  }
+}
 
-  @media (max-width: 991px) {
+@media (max-width: 991px) {
     .nav-link-ltr:hover::before {
         width: 100%;
-      }
-  }
-  
+    }
+}
+
 @media (max-width:767px) {
     .menu .menu-item a {
         text-align: left
@@ -721,8 +677,8 @@ hr {
     float: left;
 }
 
-
 /* Resume Section */
+
 .resume {
     margin-left: 10%;
     margin-top: 3%;
@@ -789,10 +745,10 @@ hr {
     border: 2px solid #1f5297;
 }
 
-
 /* ************************
    navbar CSS
-   ************************ */ 
+   ************************ */
+
 @media only screen and (max-width: 800px) {
     .custom-logo-site {
         position: sticky;
@@ -817,7 +773,7 @@ hr {
     position: sticky;
     width: 100%;
     top: 0px;
-} 
+}
 
 /* logo line above and blow the logo */
 
@@ -846,8 +802,6 @@ hr {
     width: 100%;
 }
 
-/* TODO: try to figure out a way to refactor the code to avoid repetitions */
-
 .logo-line-above i {
     position: relative;
     display: block;
@@ -866,27 +820,8 @@ hr {
     animation-duration: 1.3s;
 }
 
-/* index style */
-
-.list_inline {
-    list-style: none; 
-}
-
-a.index-page-link {
-    text-decoration: none;
-    color: #00008b;
-}
-
-a.index-page-link:hover {
-    text-decoration: underline;
-}
-
-a.index-page-icon-link:link {
-    text-decoration: none;
-    color: #00008b;
-}
-
 /* Old English Font */
+
 @font-face {
     font-family: "Old English Text MT";
     src: url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.eot");
@@ -901,17 +836,16 @@ a.index-page-icon-link:link {
          url('//assets/fonts/Old_English_Text_MT_V2.woff2'),
          url('//assets/fonts/Old_English_Text_MT_V2.ttf'),
   } */
-  
 
 @font-face {
     font-family: Romentic;
     /* src: url(./assets/fonts/Romentic.ttf) format('truetype'), */
     src: url(/assets/fonts/Romentic.woff) format('truetype');
-  }
+}
 
 /* ************************
    about_me CSS
-   ************************ */ 
+   ************************ */
 
 .anime-container {
     width: 100%;
@@ -928,8 +862,8 @@ canvas {
     position: fixed;
 }
 
+/* baka-fun css */
 
-/* baka-fun css */ 
 .b-background, .b-background-cover {
     top: 0;
     left: 0;
@@ -953,14 +887,13 @@ canvas {
     font-size: 14px;
 }
 
-
 .b-profile-text h1, .b-profile-text h2 {
     font-weight: 500;
     padding-bottom: 10px;
     margin-bottom: 5px;
     width: 100%;
     position: relative;
-    color:  #0245ab;
+    color: #0245ab;
 }
 
 .b-profile-text h1:before, .b-profile-text h2:before {
@@ -980,7 +913,6 @@ canvas {
     background-color: #ddd;
 }
 
-
 h1.b-about-title {
     font-size: 32px;
     color: black
@@ -993,7 +925,6 @@ h1.b-about-title:before {
 h1.b-about-title:after {
     content: None
 }
-
 
 .b-profile-text h1:not(:first-child), .b-profile-text h2:not(:first-child), .b-profile-text h3:not(:first-child) {
     margin-top: 20px;
@@ -1016,7 +947,6 @@ h3 {
     font-weight: bold;
 }
 
-
 .b-profile-text code {
     color: #2e04c3;
     background-color: #eee;
@@ -1032,7 +962,7 @@ h3 {
     list-style: none;
 }
 
-.increased-separation  {
+.increased-separation {
     line-height: 2.3em;
 }
 
@@ -1054,12 +984,10 @@ span.group_members {
     color: blueviolet;
 }
 
-
 .project-image-container {
-    margin-top: 20px;    
+    margin-top: 20px;
     /* height: 200px; */
 }
-
 
 .project-img {
     width: 100%;
@@ -1069,35 +997,52 @@ span.group_members {
 a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
-  }
+}
 
-
-  .project-images {
+.project-images {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-  }
-  
-  .project-image-wrapper {
+}
+
+.project-image-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     width: calc(50% - 20px);
     height: 300px;
     margin: 5px;
-  }
-  
-  .project-image {
+}
+
+.project-image {
     display: block;
     object-fit: cover;
     width: 100%;
-    height: 100%; /* set to 'auto' in IE11 to avoid distortions */
-  }
-
+    height: 100%;
+    /* set to 'auto' in IE11 to avoid distortions */
+}
 
 /* ************************
    index CSS
-   ************************ */ 
+   ************************ */
+
+.list_inline {
+    list-style: none;
+}
+
+a.index-page-link {
+    text-decoration: none;
+    color: #00008b;
+}
+
+a.index-page-link:hover {
+    text-decoration: underline;
+}
+
+a.index-page-icon-link:link {
+    text-decoration: none;
+    color: #00008b;
+}
 
 .personal_info {
     color: #000;
@@ -1108,10 +1053,9 @@ div.links {
     margin-bottom: 30px;
 }
 
-
 /* ************************
    about CSS
-   ************************ */ 
+   ************************ */
 
 /* #anime-intro-video {
     position: fixed;
@@ -1131,4 +1075,3 @@ div.links {
     /* font-style: italic; */
     font-family: Romentic;
 }
-
