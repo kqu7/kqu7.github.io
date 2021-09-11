@@ -984,15 +984,6 @@ span.group_members {
     color: blueviolet;
 }
 
-.project-image-container {
-    margin-top: 20px;
-    /* height: 200px; */
-}
-
-.project-img {
-    width: 100%;
-    height: 100%;
-}
 
 a:hover::after {
     transform: scaleX(1);
@@ -1005,7 +996,7 @@ a:hover::after {
     margin-top: 20px;
 }
 
-.project-image-wrapper {
+.project-image-wrapper-horizontal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1014,9 +1005,29 @@ a:hover::after {
     margin: 5px;
 }
 
+.project-image-wrapper-horizontal-one-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(25% - 20px);
+    height: 300px;
+    margin: 5px;
+}
+
+.project-image-wrapper-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(33% - 20px);
+    height: 300px;
+    margin: 5px;
+}
+
+
+
 .project-image {
     display: block;
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 100%;
     /* set to 'auto' in IE11 to avoid distortions */
