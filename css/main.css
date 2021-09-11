@@ -877,8 +877,8 @@ canvas {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: -20% 50%;
-    opacity: 0.20
+    background-position: right 50% bottom 50%;
+    opacity: 0.10
 }
 
 .b-profile-text {
