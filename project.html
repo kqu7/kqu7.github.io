@@ -20,13 +20,15 @@ permalink: /project/
           <br>
           <p class="tab">Cassava Leaf Disease Classification is a multiclass image classification competition held at Kaggle 
             <a class="index-page-link" href="https://www.kaggle.com/c/cassava-leaf-disease-classification">(https://www.kaggle.com/c/cassava-leaf-disease-classification)</a>. In this competition, 
-            the train dataset includes 21,367 labelled images of Cassava leaves with four categories of diseases or healthy Cassava leaves. The task is to classify 
-            each image into one of the five categories mentioned above.
+            the training dataset includes 21,367 labelled images of Cassava leaves with four categories of diseases or a healthy category. The task is to classify 
+            each image into one of the five categories above.
           </p>
           <p class="tab">
-            In this project, I built an end-to-end machine learning pipeline and ensembled a 3-model classifier trained on a dataset of 30,000 images
-            To combat the noise within the data, I applied CUTMIX, dataset augmentation, TTA, and various image transformations to reduce the noise within the data
-            I trained Trained models that had 90% accuracy on the 5-fold validation and ranked 84/3947 (top 3%) in the private leader board            
+            In this project, I built an end-to-end machine learning pipeline and ensembled a 3-model classifier trained on a dataset of 30,000 images (with 21,000 origianl images and 9,000 images from 
+            another related competition). The competition dataset was unbalanced with 61.9% of training images labelled with CMD (Cassava Mosaic Disease). Dataset augmentation
+            was done by by downsampling the majority class samples and upsampling the minority classes samples through various image scaling and color shifting.
+            To combat the noise within the data, I applied CUTMIX, dataset augmentation, test-time inference, and various image transformations to make the classifier more robust.
+            The ensembed model delivered 90.01% accuracy on the private dataset and was ranked 84/3947 (top 3%) in the leaderboard.       
           </p>
           <span class="tab">
             <span class="tab">Github link: <a class="index-page-link" href="https://github.com/kqu7/Kaggle-Cassava-Leaf-Disease-Classification">https://github.com/kqu7/Kaggle-Cassava-Leaf-Disease-Classification</a>
@@ -52,20 +54,19 @@ permalink: /project/
           <h5>Evaluating the Impact of Highway Network Desing on Population Dynamics<small style="font-size: 0.8rem"> (Spring 2021)</small></h5>
           <span class="tab"><span class="group_members">Group members: Ge Zhang (gzhang60), Zhe Song (zzheng308), Kai Qu (kqu30) [All members were CSE students at Georgia Tech.]</span>
           <br>
-          <p class="tab">In this project, we aimed to detect the impacts of road and highway network development on the population dynamics of species under different 
-            scenarios, using three models (single-species model, predator vs prey model, and multi-species interactions model). The project is implemented in python.
+          <p class="tab">In this project, we aimed to detect the impacts of road and highway network development on the population dynamics of animal species under different 
+            scenarios, using three models (single-species model, predator vs prey model, and multi-species interactions model).
           </p>
-          <p class="tab">For each model, we defined the main behaviors of the population as growth and dispersal based on the reaction diffusion system, 
-            in which the dispersal can be considered as the emigration process by the population. We assumed three kinds of population distributions 
-            (uniform, clustered, and even distributions) to simulate the distributions of different species. Over generations of populations, we tracked the density of population and its growth, 
-            analyzing the sensitivity of populations of different species on the locations of highways. 
+          <p class="tab">For each model, we defined the main behaviors of the population as growth and emigration based on the reaction diffusion system, 
+             We assumed three kinds of initial population distributions (uniform, clustered, and even distributions). Over generations of populations, we tracked the density of population over areas and its growth/dispersal patterns, 
+            analyzing the sensitivity of population of on the locations of highways. 
           </p>
           <p class="tab">In conclusion, we observed that the construction site of highway roads has a significant impact on the population, killing three many times population when it is constructed 
             in the center than when constructed on the peripheral sites. Also, by comparing the population change of different scenarios, we also discovered that the competitive relationship between species 
             can result in a lower death rate caused by highroads.
           </p>
           <span class="tab">The project report is available
-          <a class="index-page-link" href="https://kqu7.github.io/assets/reports/algorithm_prj_report.pdf" target="_blank">here</a>. Full implementation is also available
+          <a class="index-page-link" href="https://kqu7.github.io/assets/reports/cse6730_report.pdf" target="_blank">here</a>. Full implementation is also available
           upon query.</span>
 
           <div class="project-images">
@@ -89,7 +90,7 @@ permalink: /project/
           <p class="tab">This is a course project for CS 7492 Simulation of Biology taken at Georgia Tech in Spring 2021. 
           I implemented four classical models (game of life, SIR, Gray-Scott diffusion) that are frequently used in biological observation and analysis, using the programming language Processing.
           </p>
-          <p class="tab">For the game of life simulation, a cellular automata simulator is written. Users can control or create cell patterns by using mouse clicks and can also enter single-step 
+          <p class="tab">For the game of life simulation, a cellular automata simulator was written. Users could control or create cell patterns by using mouse clicks and can also enter single-step 
             or continuous mode by using keystrokes. In the SIR model of disease transmission, a grid and agent based SIR epidemic simulator was implemented. Furthermore, a subpopulation graph that 
             tracked the change of different populations (infected, uninfected, recovered) was also made to analyze the trends over time.  In the reaction-diffusion project, I simulated a reaction-diffusion 
             system known as Gray-Scott and created patterns of spots, stripes or spiral waves by initializing the system with different parameter settings. 
@@ -117,12 +118,12 @@ permalink: /project/
           <h5>Exploration of Algorithms on Coping with the MVC Problem<small style="font-size: 0.8rem"> (Fall 2020)</small></h5>
           <span class="tab"><span class="group_members">Group members: Tiancheng Ye (tye97), Chenying Liu (cliu662), Kai Qu (kqu30) [All members were CSE students at Georgia Tech.]</span>
           <br>
-          <p class="tab">We implemented four different algorithms (branch and bound, approximation, and two variations of local search algorithms) attempting to cope with
+          <p class="tab">We implemented four algorithms (branch and bound, approximation, and two variations of local search algorithms) attempting to cope with
             a well-known NP-hard problem in graph theory, the minimum vertex cover (MVC). We measured the performance of different algorithms in terms of running time and
-            relative error, finding that one variation of the implemented local searches performed best in terms of the above two criterias but the performance depended significantly
+            relative error, finding that one variation of the local searches performed best in terms of the above two criterias but the performance depended significantly
             on the starting point of the search.
           </p>
-          <p class="tab">In addition, we analyzed the theoretical time and space complexities of the four algorithms, comparing the theoretical time complexities to the actual
+          <p class="tab">In addition, we analyzed the theoretical time and space complexities of the four algorithms, comparing the theoretical ones to the actual
             running time and providing explainations for some inconsistencies on certain graph instances.
           </p>
           <span class="tab">The project report is available
@@ -183,6 +184,7 @@ permalink: /project/
           <a href="https://kqu7.github.io/assets/reports/deepart_report.pdf" target="_blank">here</a>. Full implementation is also available
           upon query.
           <br>
+          !-->
       </div>
     </div>
   </div>
